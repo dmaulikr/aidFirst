@@ -10,27 +10,34 @@ import Foundation
 
 class DataManager{
     
+    var parsedData = [[String:Any]]()
+    
     let url = "http://127.0.0.1:3000/api/getHospital"
-    var completionHandler : (Data?, URLResponse?, Error?) -> Void = {
-        (data, response, error) in
-        if let error = error {
-            print(error)
-        } else {
-            do {
-                let parsedData = try JSONSerialization.jsonObject(with: data!, options: []) as! [[String:Any]]
-                print(parsedData)
-                
-            } catch let error as NSError {
+    var completionHandler : (Data?, URLResponse?, Error?) -> Void { return
+        {
+            (data, response, error) in
+            if let error = error {
                 print(error)
+            } else {
+                do {
+                    self.parsedData = try JSONSerialization.jsonObject(with: data!, options: []) as! [[String:Any]]
+                    print(self.parsedData)
+                    
+                } catch let error as NSError {
+                    print(error)
+                }
             }
+
         }
     }
+
     
     func sendHospitalRequest(url: String, parameters:[String:String], completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionTask {
         
         let parameterString = parameters.stringFromHttpParameters()
         let requestURL = URL(string: "\(url)?\(parameterString)")!
         var request = URLRequest(url: requestURL)
+        print(requestURL)
         request.httpMethod = "GET"
         
         let task = URLSession.shared.dataTask(with: request, completionHandler: completionHandler)
@@ -38,6 +45,20 @@ class DataManager{
         
         return task
     }
+    
+//    func parseData(data: [[String:Any]]) -> [[String:Any]] {
+//        
+//        var output = [[String:Any]]()
+//        
+//        let ids = data["id"] as? [[String: Any]] {
+//            for id in ids {
+//                if let hospital
+//            }
+//        }
+//        
+//        return output
+//    }
+    
 }
 
 extension String {

@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F335DAA1EDC7CDA009C0263 /* AidFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB2B491EDC36180066BA27 /* AidFirstViewController.swift */; };
+		3F335DAA1EDC7CDA009C0263 /* AidFirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB2B491EDC36180066BA27 /* AidFirstTableViewController.swift */; };
 		3F335DAC1EDC8812009C0263 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F335DAB1EDC8812009C0263 /* DataManager.swift */; };
+		420051DB1EDECFF800639E5C /* AidFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420051DA1EDECFF800639E5C /* AidFirstTableViewCell.swift */; };
+		420051DD1EDED3D600639E5C /* HospicalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420051DC1EDED3D600639E5C /* HospicalsTableViewCell.swift */; };
+		422ED00B1EE030F700F4A181 /* Aid_First in Resources */ = {isa = PBXBuildFile; fileRef = 422ED0081EE030F700F4A181 /* Aid_First */; };
+		422ED00C1EE030F700F4A181 /* DBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ED00A1EE030F700F4A181 /* DBHandler.m */; };
+		422ED0101EE0311700F4A181 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 422ED00E1EE0311700F4A181 /* libsqlite3.0.tbd */; };
+		422ED0111EE0311700F4A181 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 422ED00F1EE0311700F4A181 /* libsqlite3.tbd */; };
+		422ED0131EE0412500F4A181 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ED0121EE0412500F4A181 /* Hospital.swift */; };
 		42AB2B481EDC36180066BA27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB2B471EDC36180066BA27 /* AppDelegate.swift */; };
-		42AB2B4C1EDC36180066BA27 /* HospitalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB2B4B1EDC36180066BA27 /* HospitalsViewController.swift */; };
+		42AB2B4C1EDC36180066BA27 /* HospitalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB2B4B1EDC36180066BA27 /* HospitalsTableViewController.swift */; };
 		42AB2B4F1EDC36180066BA27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AB2B4D1EDC36180066BA27 /* Main.storyboard */; };
 		42AB2B511EDC36180066BA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AB2B501EDC36180066BA27 /* Assets.xcassets */; };
 		42AB2B541EDC36180066BA27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AB2B521EDC36180066BA27 /* LaunchScreen.storyboard */; };
@@ -19,10 +26,19 @@
 
 /* Begin PBXFileReference section */
 		3F335DAB1EDC8812009C0263 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = aidfirst/DataManager.swift; sourceTree = SOURCE_ROOT; };
+		420051DA1EDECFF800639E5C /* AidFirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AidFirstTableViewCell.swift; path = aidfirst/AidFirstTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		420051DC1EDED3D600639E5C /* HospicalsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HospicalsTableViewCell.swift; path = aidfirst/HospicalsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		422ED0071EE030F600F4A181 /* AidFirst-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AidFirst-Bridging-Header.h"; sourceTree = "<group>"; };
+		422ED0081EE030F700F4A181 /* Aid_First */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aid_First; path = "../../../Required files/Aid_First"; sourceTree = "<group>"; };
+		422ED0091EE030F700F4A181 /* DBHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBHandler.h; path = "../../../Required files/DBHandler.h"; sourceTree = "<group>"; };
+		422ED00A1EE030F700F4A181 /* DBHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBHandler.m; path = "../../../Required files/DBHandler.m"; sourceTree = "<group>"; };
+		422ED00E1EE0311700F4A181 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		422ED00F1EE0311700F4A181 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		422ED0121EE0412500F4A181 /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hospital.swift; path = aidfirst/Hospital.swift; sourceTree = SOURCE_ROOT; };
 		42AB2B441EDC36180066BA27 /* AidFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AidFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AB2B471EDC36180066BA27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42AB2B491EDC36180066BA27 /* AidFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AidFirstViewController.swift; sourceTree = "<group>"; };
-		42AB2B4B1EDC36180066BA27 /* HospitalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsViewController.swift; sourceTree = "<group>"; };
+		42AB2B491EDC36180066BA27 /* AidFirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AidFirstTableViewController.swift; sourceTree = "<group>"; };
+		42AB2B4B1EDC36180066BA27 /* HospitalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsTableViewController.swift; sourceTree = "<group>"; };
 		42AB2B4E1EDC36180066BA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42AB2B501EDC36180066BA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42AB2B531EDC36180066BA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422ED0101EE0311700F4A181 /* libsqlite3.0.tbd in Frameworks */,
+				422ED0111EE0311700F4A181 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		422ED00D1EE0311700F4A181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				422ED00E1EE0311700F4A181 /* libsqlite3.0.tbd */,
+				422ED00F1EE0311700F4A181 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42AB2B3B1EDC36180066BA27 = {
 			isa = PBXGroup;
 			children = (
 				42AB2B461EDC36180066BA27 /* AidFirst */,
 				42AB2B451EDC36180066BA27 /* Products */,
+				422ED00D1EE0311700F4A181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +88,22 @@
 		42AB2B461EDC36180066BA27 /* AidFirst */ = {
 			isa = PBXGroup;
 			children = (
+				422ED0081EE030F700F4A181 /* Aid_First */,
+				422ED0091EE030F700F4A181 /* DBHandler.h */,
+				422ED00A1EE030F700F4A181 /* DBHandler.m */,
 				42AB2B471EDC36180066BA27 /* AppDelegate.swift */,
-				42AB2B491EDC36180066BA27 /* AidFirstViewController.swift */,
-				42AB2B4B1EDC36180066BA27 /* HospitalsViewController.swift */,
+				42AB2B491EDC36180066BA27 /* AidFirstTableViewController.swift */,
+				420051DA1EDECFF800639E5C /* AidFirstTableViewCell.swift */,
+				42AB2B4B1EDC36180066BA27 /* HospitalsTableViewController.swift */,
+				420051DC1EDED3D600639E5C /* HospicalsTableViewCell.swift */,
 				3F335DAB1EDC8812009C0263 /* DataManager.swift */,
+				422ED0121EE0412500F4A181 /* Hospital.swift */,
 				42AB2B4D1EDC36180066BA27 /* Main.storyboard */,
 				42AB2B501EDC36180066BA27 /* Assets.xcassets */,
 				42AB2B521EDC36180066BA27 /* LaunchScreen.storyboard */,
 				42AB2B5B1EDC3C6C0066BA27 /* SplashScreenViewController.swift */,
 				42AB2B551EDC36180066BA27 /* Info.plist */,
+				422ED0071EE030F600F4A181 /* AidFirst-Bridging-Header.h */,
 			);
 			path = AidFirst;
 			sourceTree = "<group>";
@@ -105,6 +140,7 @@
 				TargetAttributes = {
 					42AB2B431EDC36180066BA27 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,6 +170,7 @@
 			files = (
 				42AB2B541EDC36180066BA27 /* LaunchScreen.storyboard in Resources */,
 				42AB2B511EDC36180066BA27 /* Assets.xcassets in Resources */,
+				422ED00B1EE030F700F4A181 /* Aid_First in Resources */,
 				42AB2B4F1EDC36180066BA27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F335DAA1EDC7CDA009C0263 /* AidFirstViewController.swift in Sources */,
+				3F335DAA1EDC7CDA009C0263 /* AidFirstTableViewController.swift in Sources */,
+				420051DD1EDED3D600639E5C /* HospicalsTableViewCell.swift in Sources */,
+				422ED00C1EE030F700F4A181 /* DBHandler.m in Sources */,
+				420051DB1EDECFF800639E5C /* AidFirstTableViewCell.swift in Sources */,
 				3F335DAC1EDC8812009C0263 /* DataManager.swift in Sources */,
-				42AB2B4C1EDC36180066BA27 /* HospitalsViewController.swift in Sources */,
+				422ED0131EE0412500F4A181 /* Hospital.swift in Sources */,
+				42AB2B4C1EDC36180066BA27 /* HospitalsTableViewController.swift in Sources */,
 				42AB2B481EDC36180066BA27 /* AppDelegate.swift in Sources */,
 				42AB2B5C1EDC3C6C0066BA27 /* SplashScreenViewController.swift in Sources */,
 			);
@@ -272,12 +313,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AidFirst/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arminas.AidFirst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AidFirst/AidFirst-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -286,12 +330,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AidFirst/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arminas.AidFirst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AidFirst/AidFirst-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
