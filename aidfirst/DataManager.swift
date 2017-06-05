@@ -21,7 +21,7 @@ class DataManager{
             } else {
                 do {
                     self.parsedData = try JSONSerialization.jsonObject(with: data!, options: []) as! [[String:Any]]
-                    print(self.parsedData)
+                    self.parse(data: self.parsedData)
                     
                 } catch let error as NSError {
                     print(error)
@@ -46,18 +46,29 @@ class DataManager{
         return task
     }
     
-//    func parseData(data: [[String:Any]]) -> [[String:Any]] {
-//        
-//        var output = [[String:Any]]()
-//        
-//        let ids = data["id"] as? [[String: Any]] {
-//            for id in ids {
-//                if let hospital
-//            }
-//        }
-//        
-//        return output
-//    }
+    func parser(data: Data?){
+        
+    }
+    
+    func parse(data: [[String:Any]]) -> [Hospital]? {
+        
+        var output: [Hospital]?
+        
+        if let array = data as? [[String:Any]]{
+            for object in array {
+                guard let id = object["_id"] as? String,
+                    let name = object["name"] as? String,
+                    let address = object["address"] as? String
+                    else {
+                        return nil
+                }
+            }
+        }
+        
+
+        
+        return output
+    }
     
 }
 
